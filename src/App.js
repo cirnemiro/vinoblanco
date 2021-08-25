@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { createContext, useState } from 'react'
+import {
+  BrowserRouter as Router,
+} from "react-router-dom";
+import TopMenu from './components/TopMenu/TopMenu';
+import './CSSutils/styles.scss'
+import './reset.scss'
+import MainRouter from './Router/Router';
+
+export const SessionContext = createContext()
 
 function App() {
+
+  const [superUser, setSuperUser] = useState(false);
+
+  function loginSuperUser() {
+    setSuperUser(true)
+    console.log('Superuser logged');
+  }
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <SessionContext.Provider value={{ superUser, loginSuperUser }}>
+      <TopMenu />
+      <Router>
+        <MainRouter />
+      </Router>
+    </SessionContext.Provider>
   );
 }
 

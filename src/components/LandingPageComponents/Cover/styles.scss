@@ -1,0 +1,24 @@
+.cover{
+    &__mobile{
+        background-image: url('../../../assets/images/coverLandingPage.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 428px;
+        text-align: center;
+        padding-top: 140px;
+        margin-bottom: 60px;
+        h1{
+            color: white;
+            margin-bottom: 108px;
+        }
+        p{
+            color: white;
+            width: 89%;
+            margin: auto;
+        }
+    }
+    &__desktop{
+        
+    }
+}

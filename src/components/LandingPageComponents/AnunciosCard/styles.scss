@@ -1,0 +1,56 @@
+.anunciosCard{
+    width: 280px;
+    height: 120px;
+    background-color: white;
+    padding: 8px 8px 16px 8px;
+    border-radius: 8px;
+    &__header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        &__profile{
+            display: flex;
+            align-items: center;
+            &__photo{
+                width: 32px;
+                height: 32px;
+                img{
+                    width: 100%;
+                }
+            }
+            &__name{
+                margin-left: 4px;
+                p{
+                    font-family: Manrope;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 12px;
+                    line-height: 16px;
+                    color: #3E3F49;
+                }
+            }
+        }
+        &__date{
+            p{
+                font-family: Manrope;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 16px;
+                text-align: right;
+                color: #7C7C7C;
+            }
+        }
+    }
+    &__content{
+        p{
+            font-family: Manrope;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 130%;
+            color: #3D3D3D;
+        }
+    }
+}
