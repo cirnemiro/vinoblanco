@@ -21,7 +21,12 @@ const Anuncios = () => {
                     <button onClick={handleEdit}>Edit</button>
                 }
             </h4>
-            <AnunciosCard />
+            <div className="anuncios__carousel">
+                <AnunciosCard />
+                <AnunciosCard />
+                <AnunciosCard />
+                <AnunciosCard />
+            </div>
         </div>
     );
 }

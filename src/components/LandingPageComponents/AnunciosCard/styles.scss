@@ -1,9 +1,11 @@
 .anunciosCard{
     width: 280px;
+    min-width: 280px;
     height: 120px;
     background-color: white;
     padding: 8px 8px 16px 8px;
     border-radius: 8px;
+    margin-left: 9px;
     &__header{
         display: flex;
         align-items: center;
@@ -53,4 +55,8 @@
             color: #3D3D3D;
         }
     }
+}
+
+.anunciosCard:first-of-type{
+    margin-left: 16px;
 }
