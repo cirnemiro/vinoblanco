@@ -1,0 +1,30 @@
+.tienda{
+    width: auto;
+    margin-top: 60px;
+    &__header{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        &__tittle{
+            margin-left: 16px;
+           h4{
+            font-family: Manrope;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 120%;
+            color: #3D3D3D;
+           }
+        }
+        &__showMore{
+            margin-right: 16px;
+            font-family: Manrope;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 16px;
+            text-align: right;
+            color: #3E3F49;
+        }
+    }
+}

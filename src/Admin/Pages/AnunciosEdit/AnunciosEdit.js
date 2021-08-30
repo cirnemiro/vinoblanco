@@ -4,7 +4,7 @@ import './styles.scss'
 
 const AnunciosEdit = () => {
     return (
-        <div className="anunciosEdit">
+        <div>
             anuncios edit
         </div>
     );
